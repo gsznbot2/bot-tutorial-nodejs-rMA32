@@ -7,7 +7,7 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy/; botRegexSalty = /^\/salt/;botRegexPay = /^\/payouts/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/mike/; botDEZ = /^\/eat/; botDuck = /^\/duck/;
-      botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexTrade = /^\/trades/; botRegexGuide = /^\/guidelines/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
+      botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexGuide = /^\/guidelines/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
       botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCommands = /^\/commands/; botRegexOffseason = /^\/offszn/; botRegexDL = /^\/gszn/; botRegexFull = /^\/full/; botRegexTwitter = /^\/twitter/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://media.giphy.com/media/3o6Mb93JnT2hfbvK92/giphy.gif'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
@@ -54,14 +54,9 @@ function respond() {
     postMessage("http://www.youtube.com/"+request.text.substring(8,request.text.length));
     this.res.end();
   } 
-  else if(request.text && botRegexTrade.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("");
-    this.res.end();
-  } 
   else if(request.text && botRegexGuide.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("");
+    postMessage("https://i.groupme.com/2011x2250.jpeg.ff13395187694949b665c556af986e0c.large");
     this.res.end();
   } 
    else if(request.text && botDEZ.test(request.text)) {
@@ -116,7 +111,7 @@ this.res.end();
 }
   else if(request.text && botRegexRuless.test(request.text)) {
 this.res.writeHead(200);
-postMessage("");
+postMessage("https://i.groupme.com/1827x2250.jpeg.79859ec18cb14ec6b926f781ce2ffdd3.large");
 this.res.end();
 }
     else if(request.text && botRegexCrying.test(request.text)) {

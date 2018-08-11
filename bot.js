@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/; botRegexSalty = /^\/salt/;botRegexPay = /^\/payouts/;
       botRegexAd=/^\/advance/;botRegexMI = /^\/mike/; botDEZ = /^\/eat/; botDuck = /^\/duck/;
       botRegexTw = /^\/twitch/i; botRegexYu = /^\/youtube/i; botRegexGuide = /^\/guidelines/; botRegexCC = /^\/bleach/; botRegexSr = /^\/trash/; botRegexQu = /^\/stfu/; botRegexBack = /^\/comeback/;
-      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexCommands = /^\/commands/; botRegexOffseason = /^\/offszn/; botRegexDL = /^\/gszn/; botRegexFull = /^\/full/; botRegexTwitter = /^\/twitter/; botRegexCheese = /^\/cheese/
+      botRegexCryNeema=/^\/cry neema/; botRegexLuck = /^\/luck/; botRegexFumble = /^\/fumble/; botRegexL = /^\/L/;  botRegexCrying = /^\/cry/;  botRegexRuless = /^\/rules/; botRegexDL = /^\/gszn/; botRegexFull = /^\/full/; botRegexTwitter = /^\/twitter/; botRegexCheese = /^\/cheese/
       cheese1 = 'https://pbs.twimg.com/profile_images/494330891/cheese_oh_cheese_400x400.jpg'; cheese2 = 'https://media.giphy.com/media/3o6Mb93JnT2hfbvK92/giphy.gif'
       cheese3 = 'http://www.packerpalace.com/palace02/maddenwcheese.gif';
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
@@ -119,22 +119,12 @@ this.res.writeHead(200);
 postMessage("https://i.groupme.com/499x281.gif.5b2ee2198fcb4d14996bb88a9c7fcff4");
 this.res.end();
 }
-  else if(request.text && botRegexCommands.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
-    else if(request.text && botRegexOffseason.test(request.text)) {
-this.res.writeHead(200);
-postMessage("");
-this.res.end();
-}
       else if(request.text && botRegexDL.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://daddyleagues.com/gszn");
 this.res.end();
 }
-        else if(request.text && botRegexFullRules.test(request.text)) {
+        else if(request.text && botRegexFull.test(request.text)) {
 this.res.writeHead(200);
 postMessage("https://www.daddyleagues.com/gszn/rules");
 this.res.end();
